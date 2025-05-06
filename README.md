@@ -1,5 +1,6 @@
 
 #ESP32 development board#
+
 SSD1306 OLED display (128x64 pixels)
 4 buttons (A, B, C, D) connected to pins 14, 27, 26, and 25
 
@@ -21,18 +22,19 @@ SSD1306 OLED display (128x64 pixels)
 #If you were to improve the sorting hat, what technical improvements would you make? Consider:#
 *How could you improve the model's accuracy or efficiency?*
 *Feature Weighting:*
-Implement weighted features to give greater importance to questions directly tied to core house values
+- Implement weighted features to give greater importance to questions directly tied to core house values
 
 *Ensemble Learning:*
-Replace the single decision tree with an ensemble method like Random Forest
+- Replace the single decision tree with an ensemble method like Random Forest
 
 *Confidence Scores:*
-Modify the model to output confidence percentages for each house to provide more nuanced sorting results, acknowledging that many wizards have traits from multiple houses
+- Modify the model to output confidence percentages for each house to provide more nuanced sorting results, acknowledging that many wizards have traits from multiple houses
 
 #What additional sensors or hardware could enhance the user experience?#
-Use capacitive Touch Sensors to replace mechanical buttons with capacitive touch sensors for a more elegant interface.
+- Use capacitive Touch Sensors to replace mechanical buttons with capacitive touch sensors for a more elegant interface.
 
 #Does decision tree remain suitable for your choice of new sensors? If yes, carefully justify your answer. If not, what ML model would you use and explain why.#
-If we're only using capacitive touch sensors as direct replacements for buttons (binary input), a decision tree remains suitable because the fundamental data structure doesn't change - we're still collecting categorical responses to questions.
+
+- If we're only using capacitive touch sensors as direct replacements for buttons (binary input), a decision tree remains suitable because the fundamental data structure doesn't change - we're still collecting categorical responses to questions.
 Decision trees have low computational requirements, suitable for embedded systems like ESP32
 
